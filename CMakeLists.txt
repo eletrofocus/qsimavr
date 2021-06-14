@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.0)
+cmake_minimum_required(VERSION 2.8.12)
 project(qsimavr)
 
 set(VERSION 1)
@@ -33,6 +33,7 @@ endif(CMAKE_COMPILER_IS_GNUCXX)
 add_subdirectory(EepromComponent)
 add_subdirectory(Examples)
 add_subdirectory(GlcdComponent)
+add_subdirectory(Display14Seg)
 add_subdirectory(LcdComponent)
 add_subdirectory(LedButtonsComponent)
 add_subdirectory(QHexEdit2)

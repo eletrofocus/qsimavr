@@ -53,7 +53,9 @@ void PluginManager::load(QThread *t, QMdiArea *mdiArea)
      */
 
     QLOG_TRACE() << "Searching for available plugins";
-    QDir dir(PLUGIN_PATH);
+    // QDir dir(PLUGIN_PATH);
+    QDir dir;
+    dir.current();
     foreach (const QString &filename, dir.entryList(QDir::Files)) {
         load(t, mdiArea, dir.absoluteFilePath(filename));
     }

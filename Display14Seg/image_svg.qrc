@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Display14_modificado.svg</file>
+    </qresource>
+</RCC>
